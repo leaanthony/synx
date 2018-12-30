@@ -1,12 +1,12 @@
 package synx
 
-// String represents an the String type
+// StringSlice represents a string slice type
 type StringSlice struct {
 	locker
 	value []string
 }
 
-// NewStringSlice creates a new wrapper type for a sring value
+// NewStringSlice creates a new wrapper for a string slice
 func NewStringSlice(value []string) *StringSlice {
 	return &StringSlice{
 		locker: newLock(),

@@ -1,12 +1,12 @@
 package synx
 
-// String represents an the String type
+// String represents a string type
 type String struct {
 	locker
 	value string
 }
 
-// NewString creates a new wrapper type for a sring value
+// NewString creates a new wrapper for a string value
 func NewString(value string) *String {
 	return &String{
 		locker: newLock(),

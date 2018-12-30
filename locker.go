@@ -14,10 +14,12 @@ func newLock() locker {
 	}
 }
 
+// Lock the mutex
 func (l *locker) Lock() {
 	l.lock.Lock()
 }
 
+// Unlock the mutex
 func (l *locker) Unlock() {
 	l.lock.Unlock()
 }

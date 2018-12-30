@@ -6,7 +6,7 @@ type Bool struct {
 	value bool
 }
 
-// NewBool creates a new wrapper type for an Bool value
+// NewBool creates a new wrapper type for a Bool value
 func NewBool(value bool) *Bool {
 	return &Bool{
 		locker: newLock(),

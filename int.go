@@ -1,6 +1,6 @@
 package synx
 
-// Int represents an the int type
+// Int represents an int type
 type Int struct {
 	locker
 	value int
